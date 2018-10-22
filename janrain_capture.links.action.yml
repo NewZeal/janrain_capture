@@ -1,0 +1,11 @@
+janrain_capture.capture_settings:
+  route_name: janrain_capture.settings.capture
+  title: 'Capture settings'
+  appears_on:
+    - janrain_capture.settings
+
+janrain_capture.screen_settings:
+  route_name: janrain_capture.settings.screens
+  title: 'Screen settings'
+  appears_on:
+    - janrain_capture.settings

@@ -22,6 +22,18 @@ janrain_capture.xdcomm:
     _controller: '\Drupal\janrain_capture\Controller\AuthenticationController::xdcomm'
   requirements:
       _access: 'TRUE'
+janrain_capture.settings:
+  path: '/admin/config/people/janrain-capture'
+  defaults:
+    _form: '\Drupal\janrain_capture\Form\JanrainCaptureDrupalSettingsForm'
+  requirements:
+    _permission: 'administer site configuration'
+janrain_capture.settings.drupal:
+  path: '/admin/config/people/janrain-capture/drupal-settings'
+  defaults:
+    _form: '\Drupal\janrain_capture\Form\JanrainCaptureDrupalSettingsForm'
+  requirements:
+    _permission: 'administer site configuration'
 janrain_capture.settings.capture:
   path: '/admin/config/people/janrain-capture/capture-settings'
   defaults:
@@ -32,11 +44,5 @@ janrain_capture.settings.screens:
   path: '/admin/config/people/janrain-capture/screens-settings'
   defaults:
     _form: '\Drupal\janrain_capture\Form\JanrainScreensSettingsForm'
-  requirements:
-    _permission: 'administer site configuration'
-janrain_capture.settings:
-  path: '/admin/config/people/janrain-capture'
-  defaults:
-    _form: '\Drupal\janrain_capture\Form\JanrainCaptureDrupalSettingsForm'
   requirements:
     _permission: 'administer site configuration'
